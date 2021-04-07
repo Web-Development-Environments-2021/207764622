@@ -1,11 +1,11 @@
-The site i built for the psychologist "Sigmund Freud"
-The site conatins:
-	- A short background about Sigmund Freud from wikipedia.
-	- "Sigmund Freud" photos and painting.
-	- "Sigmund Freud" best meme song.
-	- Answers for the questions asked at the assignment.
-	- A way to contact me through an E-mail and also adding some emojis.
-
-website URL: https://cecroud.github.io/hello-world/
-ID: 207764622
+The site i built for the psychologist "Sigmund Freud"<br/>
+The site conatins:<br/>
+	- A short background about Sigmund Freud from wikipedia.<br/>
+	- "Sigmund Freud" photos and painting.<br/>
+	- "Sigmund Freud" best meme song.<br/>
+	- Answers for the questions asked at the assignment.<br/>
+	- A way to contact me through an E-mail and also adding some emojis.<br/>
+<br/>
+website URL: https://cecroud.github.io/hello-world/<br/>
+ID: 207764622<br/>
 Name: Noam Refaeli
