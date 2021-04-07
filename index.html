@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sigmund Freud</title>
-    <div id="fb-root">
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v10.0" nonce="n6Z2SBkm"></script>
-    </div>
-        <style>
-            body {
-                background-color: lightgrey;
-                font-family: cursive;
+    <script>
+        function on_change(el) {
+            var ta = document.getElementById('Textarea')
+            if (el.options[el.selectedIndex].value == '1') {
+                ta.value = ta.value + String.fromCodePoint(0x1F600);
             }
-
-            hr {
-                width: 160000px; /* width: 20%; */
-                color: gold;
+            else if (el.options[el.selectedIndex].value == '2') {
+                ta.value = ta.value + String.fromCodePoint(0x1F601);
             }
-        </style>
+            else if (el.options[el.selectedIndex].value == '3') {
+                ta.value = ta.value + String.fromCodePoint(0x1F602);
+            }
+            else if (el.options[el.selectedIndex].value == '4') {
+                ta.value = ta.value + String.fromCodePoint(0x1F60E);
+            }
+            else if (el.options[el.selectedIndex].value == '5') {
+                ta.value = ta.value + String.fromCodePoint(0x270C);
+            }
+            document.getElementById('mySelect').value = 0
+        }
+    </script>
+    <meta charset=“UTF-8”>
+    <meta name="description" content="The is My first Website about Sigmund Freud,I hope it looks nice and servers you well" />
+    <title>Sigmund Freud The Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body>
-    <br />
-    <div id="menu" class="menuText" style="font-size:30px; text-align:center;">
-        <a href="#about">About Me</a>&nbsp;&nbsp;
-        <a href="#photos">My Photos</a>&nbsp;&nbsp;
-        <a href="#playlist">My Playlist</a>&nbsp;&nbsp;
-        <a href="#like">Like</a>&nbsp;&nbsp;
-        <a href="#qrcoder">QR code</a>&nbsp;&nbsp;
-        <a href="#spa">Q&A</a>&nbsp;&nbsp;
-        <a href="#contact">Contact Me</a>&nbsp;&nbsp;
-        <img style="float: right; margin-bottom:20px" src="Photos\logo.jpg" width="80" align="right" />
+<body onload="javascript:(function(){document.getElementById('mySelect').value = 0})()">
+    <div id="menu" class="menuText">
+        <a href="#about">About Me</a>&nbsp;&nbsp;&nbsp;
+        <a href="#photos">My Photos</a>&nbsp;&nbsp;&nbsp;
+        <a href="#playlist">My Playlist</a>&nbsp;&nbsp;&nbsp;
+        <a href="#like">Like</a>&nbsp;&nbsp;&nbsp;
+        <a href="#qrcoder">QR code</a>&nbsp;&nbsp;&nbsp;
+        <a href="#spa">Q&A</a>&nbsp;&nbsp;&nbsp;
+        <a href="#contact">Contact Me</a>&nbsp;&nbsp;&nbsp;
+        <img style="float: right; margin-bottom:6px; margin-right:16px;"  src="Photos\logo.jpg" width="30" align="right" />
     </div>
 
     <section id="about" class="section">
         <br />
-        <hr />
-        <h1 style="margin-left:10px; font-size:38px; color:darkblue">
-            <center><b>About Me</b></center>
+        <h1>
+            About Me
         </h1>
-        <h3 style="margin-left:25px; font-size:25px">
+        <h2>
             Sigmund Freud born Sigismund Schlomo Freud; 6 May 1856 – 23 September 1939) was an Austrian neurologist and the founder of psychoanalysis, a clinical method for treating psychopathology through dialogue between a patient and a psychoanalyst.
             <br />
             Freud was born to Galician Jewish parents in the Moravian town of Freiberg, in the Austrian Empire. He qualified as a doctor of medicine in 1881 at the University of Vienna.
@@ -57,53 +65,49 @@
             Though in overall decline as a diagnostic and clinical practice, psychoanalysis remains influential within psychology, psychiatry, and psychotherapy, and across the humanities. It thus continues to generate extensive and highly contested debate with regard to its therapeutic efficacy, its scientific status, and whether it advances or hinders the feminist cause.
             <br /><br />
             Nonetheless, Freud's work has suffused contemporary Western thought and popular culture. W. H. Auden's 1940 poetic tribute to Freud describes him as having created "a whole climate of opinion / under whom we conduct our different lives."
-        </h3>
+        </h2>
     </section>
 
     <section id="photos" class="section">
+        <br />
         <hr />
-        <h1>
-            <h1 style="margin-left:10px; font-size:38px; color:darkblue">
-                <center><b>My Photos</b></center>
-            </h1>
-            <br />
-            <table align="center" cellspacing="100">
-                <tr>
-                    <td>
-                        <img style="float: right;" src=Photos/download.jpg align="left" width=270px height=300px />
-                    </td>
-                    <td>
-                        <img style="float: right;" src=Photos/fruedd.jpg align="left" width=270px height=300px />
-                    </td>
-                    </td>
-                    <td>
-                        <img style="float: right;" src=Photos/fruu.jpg align="left" width=270px height=300px />
-                    <td>
-                        <img style="float: right;" src=Photos/images.jpg align="left" width=270px height=300px />
-                    </td>
-                </tr>
-            </table>
+        <h1> My Photos</h1>
+        <table align="center" cellspacing="25">
+            <tr>
+                <td>
+                    <img style="float: right;" src=Photos/download.jpg align="left" width=135 height=150 />
+                </td>
+                <td>
+                    <img style="float: right;" src=Photos/fruedd.jpg align="left" width=135 height=150 />
+                </td>
+                <td>
+                    <img style="float: right;" src=Photos/fruu.jpg align="left" width=135 height=150 />
+                <td>
+                    <img style="float: right;" src=Photos/images.jpg align="left" width=135 height=150 />
+                </td>
+            </tr>
+        </table>
     </section>
 
     <section id="playlist" class="section">
+        <br />
         <hr />
-        <h1 style="margin-left:10px; font-size:38px; color:darkblue">
-            <center><b>My Playlist</b></center>
-        </h1>
+        <h1>My Playlist</h1>
         <br />
         <center>
-            <iframe width="600" height="360" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="300" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </center>
     </section>
 
     <section id="like" class="section">
         <br />
         <hr />
-        <h1 style="margin-left:10px; font-size:38px; color:darkblue">
-            <center><b>Like</b></center>
-        </h1>
+        <h1>Like</h1>
         <br />
         <center>
+            <div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v10.0" nonce="n6Z2SBkm"></script>
+            </div >
             <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="1000000px" data-layout="button" data-action="like" data-size="large" data-share="true" style="width:400px"></div>
         </center>
         <br />
@@ -113,161 +117,142 @@
     <section id="qrcoder" class="section">
         <br />
         <hr />
-        <h1 style="margin-left:10px; font-size:38px; color:darkblue">
-            <center><b>QR Code</b></center>
-        </h1>
-            <img src=qrcode.png id="qrcode" class="center" />
+        <h1> QR Code</h1>
+        <div style="text-align:center">
+            <img src=Photos/barcode.jpg id="qrcode" class="center" style="height:150px; width:150px;" />
             <br />
+        </div>
     </section>
 
     <section id="spa" class="section">
-        <hr />
         <br />
-        <h1>
-            ans
-        </h1>
-        <table class="answers" border=1 align=center cellpadding="0" cellspacing="0" bordercolor="white" width="70%">
+        <hr />
+        <h1>Q&A</h1>
+        <table class="answers" border=1 align=center cellpadding="0" cellspacing="0" bordercolor="darkgoldenrod" width="90%">
             <tr>
-                <td width="20%">
-                    <h2>
+                <td width="30%" style="text-align:center;">
+                    <h2 style="font-size: 21px; font-weight:bold">
                         Web 1.0
                     </h2>
                 </td>
-                <td width="20%">
-                    <h2>
+                <td width="30%" style="text-align:center;">
+                    <h2 style="font-size: 21px; font-weight:bold">
                         Web 2.0
                     </h2>
                 </td>
-                <td width="20%">
-                    <h2>
+                <td width="30%" style="text-align:center;">
+                    <h2 style="font-size: 21px; font-weight:bold">
                         Web 3.0
                     </h2>
                 </td>
             </tr>
             <tr>
-                <td width="20%">
-                    <h3>
-                        the web is Read-Only and static.
-                    </h3>
+                <td width="30%">
+                    <h2>
+                        Mostly Read-Only,Content that people consume(e.g. Walla) Company focused static pages.
+                    </h2>
                 </td>
-                <td width="20%">
-                    <h3>
-                        the web is wildly Read-Write.
-                    </h3>
+                <td width="30%">
+                    <h2>
+                        Wildly Read-Write,People publish content that other people can consume(e.g. YouTube) Community Focused dynamic pages.
+                    </h2>
                 </td>
-                <td width="20%">
-                    <h3>
-                        the web is portable and personal - Read-Write intelligent web.
-                    </h3>
+                <td width="30%">
+                    <h2>
+                        Portable and personal - Read-Write intelligent web, people build applications that people can interact with(e.g. Twitter, Facebook, Instagram) Individual Focused pages.
+                    </h2>
             </tr>
             <tr>
                 <td width="20%">
-                    <h3>
-                        search engines retrieve macro contents. Search is very fast but many times results are inaccurate or more than users can chew.
-                    </h3>
+                    <h2>
+                        Search engines retrieve macro contents.<br/>
+                        Search is very fast but many times results are inaccurate.
+                    </h2>
                 </td>
                 <td width="20%">
-                    <h3>
-                        search engines retrieve tags with micro contents. The process of tagging is manual, tedious and covers negligible percents of the WWW.
-                    </h3>
+                    <h2>
+                        Search engines retrieve tags with micro contents.<br />
+                        The process of tagging is manual, tedious and covers negligible percents of the word wide web.
+                    </h2>
                 </td>
                 <td width="20%">
-                    <h3>
-                        search engines will retrieve micro content texts which were tagged automatically.This implies translating billions of Web 1.0 macro contents into micro contents. The result could be more precise search because tagging can solve part of the ambiguity that homonyms and synonyms introduce into the process of Search.
-                    </h3>
+                    <h2>
+                        Search engines will retrieve micro content texts which were tagged automatically.<br />
+                        This implies translating billions of Web 1.0 macro contents into micro contents.<br />
+                        The result could be more precise search because tagging can solve part of the ambiguity that homonyms and synonyms introduce into the process of Search.
+                    </h2>
                 </td>
             </tr>
             <tr>
                 <td width="20%">
-                    <h3>
-                        Companies publish content that people consume (e.g. Ynet)
-                    </h3>
+                    <h2>
+                        Used for Web forms, and uses HTML/Portals.
+                    </h2>
                 </td>
                 <td width="20%">
-                    <h3>
-                        People publish content  that other people can consume, companies build platforms that let people publish content for other people (e.g. YouTube, Wikipedia)
-                    </h3>
+                    <h2>
+                        Used for Web Applications,and uses XML/RSS.
+                    </h2>
                 </td>
                 <td width="20%">
-                    <h3>
-                        People build applications that people can interact with, companies build platforms that let people publish services by leveraging the associations between people or special content ( e. g. Facebook, Instagram)
-                    </h3>
+                    <h2>
+                        Used for Smart Applications, and uses RDF/RDFS/OWL.
+                    </h2>
                 </td>
             </tr>
         </table>
         <br>
         <br>
-        <h3 font>
-            <u>
-                Use Case example - noa  kirel
-            </u>
-            <li>
-                Web 1.0 - for finding the relevant data we want about "noa kirel - latest song", the user have to write a specific URL.
-            </li>
-            <li>
-                Web 2.0 - for finding result we can use "noa kirel - latest song" as a query to a search engines
-                and we will get result from the query as web tags.
-            </li>
-            <li>
-                Web 3.0 - for finding result we can use "noa kirel - latest song" as a query to a search engines
-                and we will get result that contain the query words and semantic words as tags or web info.
-            </li>
-        </h3>
-
+        <h2>
+            <u>Case example - "Freud's Major Theories"</u>
+            <br />
+            <ul>
+                <li>
+                    <u><b>Web 1.0</b></u> - To find the relevant data for the search "Freud's Major Theories" the user would have to write a specific URL.
+                </li>
+                <li>
+                    <u><b>Web 2.0</b></u> - To find the relevant data for the serach "Freud's Major Theories" we can use it as a query to a search engines
+                    and we will get result from the query as web tags.
+                </li>
+                <li>
+                    <u><b>Web 3.0</b></u> - To find results about "Freud's Major Theories" you can use it as a query to search engines
+                    and they will get results that contain the query words and semantic words as tags or web info.
+                </li>
+            </ul>
+        </h2>
     </section>
 
     <section id="contact" class="section">
-        <h1>
-            contact me
-        </h1>
-        <h2 id="contactSection">
-            so what do you think?<br />
-            send me an e-mail here and let me know.<br />
-        </h2>
-        <h3>
-            <form action="mailto:avivams@post.bgu.ac.il" method="post" enctype="text/plain">
-                Name:<br>
-                <input type="text" name="name"><br>
-                E-mail:<br>
-                <input type="text" name="mail"><br>
-                Comment:<br>
-                <textarea id="myTextarea"></textarea><br /><br />
-                <script>
-
-                    $(document).ready(function () {
-                        $("#myTextarea").emojioneArea({
-                            pickerPosition: "top"
-                        });
-                    })
-
-                </script>
+        <div style="text-align:left" class="form">
+            <br />
+            <hr />
+            <h1 style="text-align:left">Contact Me</h1>
+            <h2>
+                Hey, What's your opnion about the site?<br />
+                I'll be happy to know, what about sending me an E-mail<br />
+            </h2>
+            <form class="form" action="mailto:refaelin@post.bgu.ac.il" method="post" enctype="text/plain">
+                <label>Name:</label>
+                <input type="text" class="form" name="Name: "><br>
+                <label>E-mail:</label>
+                <input type="email" name="E-mail: " class="form"><br>
+                <label>Age:</label>
+                <input style="margin-right:20px" type="text" name="Age: " class="form"><br>
+                <label>Comment:</label>
+                <textarea id="Textarea" name="Text: "style="margin-right:20px" class="form" rows="5"></textarea><br />
+                <label for="mySelect">Add an Emoji</label>
+                <select id="mySelect" onchange='on_change(this)'>
+                    <option disabled="disabled" value='0'>Choose Emoji:</option>
+                    <option value='1'>&#x1F600</option>
+                    <option value='2'>&#x1F601</option>
+                    <option value='3'>&#x1F602</option>
+                    <option value='4'>&#x1F60E</option>
+                    <option value='5'>&#x270C</option>
+                </select>
                 <input type="submit" value="Send">
                 <input type="reset" value="Reset">
             </form>
-        </h3>
-        <br />
+        </div>
     </section>
-    </script>
-    <script>
-        function add() {
-            var x = gender;
-            document.getElementById(comment).value += comment;
-        }
-    </script>
-    <script type="text/javascript">
-        $(function () {
-            $("#nav a").click(function (e) {
-                e.preventDefault();
-                $('html,body').scrollTo(this.hash, this.hash);
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).scroll(function () {
-            $('#menu').toggle($(this).scrollTop() > 1000)
-        });
-    </script>
-</body>
-
-</body>
+    </body>
 </html>
